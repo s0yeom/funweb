@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* 메인 */
+#content1 { position: relative;
+            width: 100%; height: 600px;
+            background: url(../images/bgSlogan.jpg) no-repeat center top / cover;
+            display: flex; flex-direction: column;
+            justify-content: center; align-items: center;
+            text-align: center; }
+#content1::before { content: ""; position: absolute; top: 0; left: 0;
+                    width: 100%; height: 100%;
+                    background: rgba(0, 0, 0, 0.5); }
+#content1 p { text-transform: uppercase; position: relative;
+              font-size: 60px; font-weight: bold; color: #fff;
+              text-shadow: 0 0 5px #333; }
+#content1 a { margin-top: 30px; position: relative;
+              display: block; width: 156px; background: #ef464c;
+              color: #fff; line-height: 40px; }
+
+#content2 { background: #ebebeb; }
+
+#solution { width: 1200px; margin: 0 auto; padding: 80px 0;
+            display: flex; }
+#solution .solution { text-align: center; flex: 1; }
+#solution .solution::before { content: ""; display: block; margin: 0 auto;
+                              width: 100px; height: 100px;
+                              background: url(../images/bgSolution.png) no-repeat; }
+#solution .security::before { content: ""; background-position-x: center; }
+#solution .payment::before { content: ""; background-position-x: right; }
+#solution .solution a { color: #000; }
+
+#content3 { width: 1200px; margin: 60px auto;
+            display: flex; justify-content: space-evenly; }
+#content3 > section { width: 45%; position: relative; }
+#content3 > section h3 { font-size: 30px; padding: 0 5px 20px;
+                          border-bottom: 1px solid #000;
+                          text-transform: uppercase; }
+#content3 > section .more { position: absolute; top: 0; right: 0;
+                            width: 30px; height: 30px; text-indent: -9999px;
+                            transition: 0.3s; }
+#content3 > section .more::before { content: ""; position: absolute; top: 50%; left: 0;
+                                    border-top: 2px solid #e3e3e3; width: 30px; }
+#content3 > section .more::after { content: ""; position: absolute; top: 0; left: 50%;
+                                    border-left: 2px solid #e3e3e3; height: 30px; }
+#content3 > section .more:hover { transform: rotate(45deg); }
+
+#sNews h3 span { color: #f67b60; }
+#sNews a { color: #000; }
+#sNews a dl { padding: 30px 15px 10px; }
+#sNews a dl dt { font-size: 20px; font-weight: bold; margin-bottom: 15px; }
+#sNews a dl dd { color: #333; margin-bottom: 10px; }
+
+#notice ul { padding: 30px 15px 10px; }
+#notice ul li { margin-bottom: 20px;
+                border-bottom: 1px solid #707070; padding-bottom: 15px; }
+#notice ul li a { color: #000; display: block;
+                  white-space: nowrap; overflow: hidden;
+                  text-overflow: ellipsis; }
+#notice ul li span { color: #b0b0b0; font-size: 14px; }
